@@ -7,8 +7,9 @@ public class testExcel {
 		
 		ExcelReader excel =new ExcelReader("D:\\udemy prac\\Seleniun raman_excelReader.xlsx");
 		String Sheet1name="trainer";
-		int rowcount =excel.getRowCount(Sheet1name);
-		System.out.println(rowcount);
+		excel.getRowCount(Sheet1name);
+		System.out.println(excel.getRowCount(Sheet1name));
+
 	}
 	
 }
