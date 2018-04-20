@@ -6,9 +6,14 @@ public class testExcel {
 	public static void main(String[] args) throws IOException {
 		
 		ExcelReader excel =new ExcelReader("D:\\udemy prac\\Seleniun raman_excelReader.xlsx");
-		String Sheet1name="trainer";
-		excel.getRowCount(Sheet1name);
-		System.out.println(excel.getRowCount(Sheet1name));
+		String Sheetname="trainer";
+		excel.getRowCount(Sheetname);
+		System.out.println(excel.getRowCount(Sheetname));
+		System.out.println(excel.getColumnCount(Sheetname));
+		System.out.println(excel.getCellData("trainer", "username", 1));
+		System.out.println(excel.getCellData("trainer", "username", 2));
+		System.out.println(excel.setCellData("trainer", "username", 3, "ankur"));
+		excel.addSheet("Selenium training");
 
 	}
 	
